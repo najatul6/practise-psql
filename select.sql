@@ -28,3 +28,5 @@ VALUES
     (13,'Mia', 'Allen', 19, 'C', 'Psychology', 'mia.allen@example.com', '2004-02-28', 'B+', 'UK'),
     (14,'Alexander', 'Young', 23, 'B', 'Anthropology', 'alexander.young@example.com', '2000-12-15', 'O+', 'Canada'),
     (15,'Isabella', 'Hernandez', 20, 'A', 'Art History', 'isabella.hernandez@example.com', '2003-05-22', 'A-', 'USA');
+
+SELECT * FROM students;
