@@ -48,3 +48,8 @@ SELECT * FROM students ORDER BY age DESC; --Selects all columns and rows from th
 SELECT * FROM students WHERE country = 'USA' ORDER BY last_name ASC; --Selects all columns and rows from the students table where the country is 'USA' and orders the results by the last_name column in ascending order
 
 SELECT DISTINCT country FROM students; --Selects unique values from the country column in the students table
+
+SELECT * FROM students WHERE country='Canada' AND grade='B'; --Selects all columns and rows from the students table where the country is 'Canada' and the grade is 'B'
+
+SELECT * FROM students WHERE country='USA' OR age<20; --Selects all columns and rows from the students table where the country is 'USA' or the age is less than 20
+
