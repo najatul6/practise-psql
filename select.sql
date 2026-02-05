@@ -53,3 +53,6 @@ SELECT * FROM students WHERE country='Canada' AND grade='B'; --Selects all colum
 
 SELECT * FROM students WHERE country='USA' OR age<20; --Selects all columns and rows from the students table where the country is 'USA' or the age is less than 20
 
+SELECT * FROM students WHERE email LIKE '%@example.com'; --Selects all columns and rows from the students table where the email ends with '@example.com'
+
+SELECT * FROM students WHERE first_name LIKE 'J%'; --Selects all columns and rows from the students table where the first_name starts with 'J'
