@@ -30,3 +30,9 @@ VALUES
     (15,'Isabella', 'Hernandez', 20, 'A', 'Art History', 'isabella.hernandez@example.com', '2003-05-22', 'A-', 'USA');
 
 SELECT * FROM students;
+
+-- SELECT first_name, last_name FROM students;
+-- SELECT email as "Student Email" FROM students;
+-- SELECT * FROM students ORDER BY first_name ASC;
+-- SELECT * FROM students ORDER BY age DESC;
+-- SELECT * FROM students WHERE grade = 'A';
