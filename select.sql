@@ -29,10 +29,22 @@ VALUES
     (14,'Alexander', 'Young', 23, 'B', 'Anthropology', 'alexander.young@example.com', '2000-12-15', 'O+', 'Canada'),
     (15,'Isabella', 'Hernandez', 20, 'A', 'Art History', 'isabella.hernandez@example.com', '2003-05-22', 'A-', 'USA');
 
-SELECT * FROM students;
+SELECT * FROM students; --Selects all columns and rows from the students table
 
--- SELECT first_name, last_name FROM students;
--- SELECT email as "Student Email" FROM students;
--- SELECT * FROM students ORDER BY first_name ASC;
--- SELECT * FROM students ORDER BY age DESC;
--- SELECT * FROM students WHERE grade = 'A';
+SELECT first_name, last_name FROM students; --Selects only the first_name and last_name columns from the students table
+
+SELECT email as "Student Email" FROM students; --Selects the email column from the students table and renames it as "Student Email" in the result set
+
+SELECT * FROM students WHERE age > 21; --Selects all columns and rows from the students table where the age is greater than 21
+
+SELECT * FROM students WHERE course = 'Computer Science'; --Selects all columns and rows from the students table where the course is 'Computer Science'
+
+SELECT * FROM students WHERE grade = 'A'; --Selects all columns and rows from the students table where the grade is 'A'
+
+SELECT * FROM students ORDER BY first_name ASC; --Selects all columns and rows from the students table and orders the results by the first_name column in ascending order
+
+SELECT * FROM students ORDER BY age DESC; --Selects all columns and rows from the students table and orders the results by the age column in descending order
+
+SELECT * FROM students WHERE country = 'USA' ORDER BY last_name ASC; --Selects all columns and rows from the students table where the country is 'USA' and orders the results by the last_name column in ascending order
+
+SELECT DISTINCT country FROM students; --Selects unique values from the country column in the students table
