@@ -56,3 +56,5 @@ SELECT * FROM students WHERE country='USA' OR age<20; --Selects all columns and 
 SELECT * FROM students WHERE email LIKE '%@example.com'; --Selects all columns and rows from the students table where the email ends with '@example.com'
 
 SELECT * FROM students WHERE first_name LIKE 'J%'; --Selects all columns and rows from the students table where the first_name starts with 'J'
+
+SELECT concat(first_name, ' ', last_name) FROM students --Selects the first_name and last_name columns from the students table and concatenates them with a space in between to create a full name in the result set
