@@ -73,3 +73,8 @@ SELECT max(age) FROM students; --Selects the age column from the students table 
 
 SELECT * FROM students WHERE age = (SELECT max(age) FROM students); --Selects all columns and rows from the students table where the age is equal to the maximum age in the table
 
+SELECT min(age) FROM students; --Selects the age column from the students table and returns the minimum value in the result set
+
+SELECT COUNT(*) FROM information_schema.columns WHERE table_schema = 'public' AND table_name = 'students';
+
+SELECT COUNT(*) AS total_column, string_agg(column_name,',') AS column_names FROM information_schema.columns WHERE table_schema='public' AND table_name='students';
