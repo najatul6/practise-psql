@@ -62,3 +62,5 @@ SELECT concat(first_name, ' ', last_name) FROM students --Selects the first_name
 SELECT COUNT(*) FROM students; --Counts the total number of rows in the students table
 
 SELECT  upper(first_name) FROM students; --Selects the first_name column from the students table and converts it to uppercase in the result set
+
+SELECT lower(last_name) FROM students; --Selects the last_name column from the students table and converts it to lowercase in the result set
