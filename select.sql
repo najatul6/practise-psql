@@ -68,3 +68,8 @@ SELECT lower(last_name) FROM students; --Selects the last_name column from the s
 SELECT length (first_name) FROM students; --Selects the first_name column from the students table and returns the length of each value in the result set
 
 SELECT avg (age) FROM students; --Selects the age column from the students table and returns the average value in the result set
+
+SELECT max(age) FROM students; --Selects the age column from the students table and returns the maximum value in the result set
+
+SELECT * FROM students WHERE age = (SELECT max(age) FROM students); --Selects all columns and rows from the students table where the age is equal to the maximum age in the table
+
