@@ -60,3 +60,5 @@ SELECT * FROM students WHERE first_name LIKE 'J%'; --Selects all columns and row
 SELECT concat(first_name, ' ', last_name) FROM students --Selects the first_name and last_name columns from the students table and concatenates them with a space in between to create a full name in the result set
 
 SELECT COUNT(*) FROM students; --Counts the total number of rows in the students table
+
+SELECT  upper(first_name) FROM students; --Selects the first_name column from the students table and converts it to uppercase in the result set
