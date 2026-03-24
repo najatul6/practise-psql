@@ -78,3 +78,4 @@ SELECT min(age) FROM students; --Selects the age column from the students table 
 SELECT COUNT(*) FROM information_schema.columns WHERE table_schema = 'public' AND table_name = 'students'; -- Returns the total number of columns in the 'students' table
 
 SELECT COUNT(*) AS total_column, string_agg(column_name,',') AS column_names FROM information_schema.columns WHERE table_schema='public' AND table_name='students'; -- Returns the total number of columns and their names in the 'students' table
+
