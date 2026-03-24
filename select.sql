@@ -75,6 +75,6 @@ SELECT * FROM students WHERE age = (SELECT max(age) FROM students); --Selects al
 
 SELECT min(age) FROM students; --Selects the age column from the students table and returns the minimum value in the result set
 
-SELECT COUNT(*) FROM information_schema.columns WHERE table_schema = 'public' AND table_name = 'students';
+SELECT COUNT(*) FROM information_schema.columns WHERE table_schema = 'public' AND table_name = 'students'; -- Returns the total number of columns in the 'students' table
 
-SELECT COUNT(*) AS total_column, string_agg(column_name,',') AS column_names FROM information_schema.columns WHERE table_schema='public' AND table_name='students';
+SELECT COUNT(*) AS total_column, string_agg(column_name,',') AS column_names FROM information_schema.columns WHERE table_schema='public' AND table_name='students'; -- Returns the total number of columns and their names in the 'students' table
