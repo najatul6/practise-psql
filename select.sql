@@ -64,3 +64,7 @@ SELECT COUNT(*) FROM students; --Counts the total number of rows in the students
 SELECT  upper(first_name) FROM students; --Selects the first_name column from the students table and converts it to uppercase in the result set
 
 SELECT lower(last_name) FROM students; --Selects the last_name column from the students table and converts it to lowercase in the result set
+
+SELECT length (first_name) FROM students; --Selects the first_name column from the students table and returns the length of each value in the result set
+
+SELECT avg (age) FROM students; --Selects the age column from the students table and returns the average value in the result set
