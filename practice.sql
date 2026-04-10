@@ -113,7 +113,6 @@ INSERT INTO orders (customer_id, order_date, total_amount) VALUES
 
 DROP Table orders;
 
-    -- Find customers who have placed more than 2 orders and calculate the total amount spent by each of these customers.
 
 
 
