@@ -83,3 +83,4 @@ SELECT * FROM students WHERE first_name ILIKE 'j%'; --Selects all columns and ro
 
 SELECT * FROM students WHERE first_name LIKE '___e'; --Selects all columns and rows from the students table where the first_name has exactly three characters before 'e'
 
+SELECT * FROM students LIMIT 5; --Selects all columns and rows from the students table and limits the results to 5 rows
