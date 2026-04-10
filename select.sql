@@ -79,3 +79,7 @@ SELECT COUNT(*) FROM information_schema.columns WHERE table_schema = 'public' AN
 
 SELECT COUNT(*) AS total_column, string_agg(column_name,',') AS column_names FROM information_schema.columns WHERE table_schema='public' AND table_name='students'; -- Returns the total number of columns and their names in the 'students' table
 
+SELECT * FROM students WHERE first_name ILIKE 'j%'; --Selects all columns and rows from the students table where the first_name starts with 'j' (case-insensitive)
+
+SELECT * FROM students WHERE first_name LIKE '___e'; --Selects all columns and rows from the students table where the first_name has exactly three characters before 'e'
+
