@@ -88,3 +88,5 @@ SELECT * FROM students LIMIT 5; --Selects all columns and rows from the students
 SELECT * FROM students LIMIT 6 OFFSET 5; --Selects all columns and rows from the students table, skips the first 5 rows, and returns the next 6 rows
 
 DELETE FROM students; -- Deletes all rows from the students table
+
+DELETE FROM students WHERE grade = 'C'; -- Deletes rows from the students table where the grade is 'C'
