@@ -120,3 +120,5 @@ DROP Table orders;
 
     -- Find the total amount of orders placed each month in the year 2022.
     SELECT extract(month from order_date) as month, sum(total_amount)  from orders WHERE extract(year from order_date) = 2022 GROUP BY month;
+
+    SHOW data_directory
