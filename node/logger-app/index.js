@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const inputArguments = process.argv.slice(2);
 const text = inputArguments.join(" ").concat("\n");
-const message = `${text},\n`;
+const message = `${text} \n`;
 
 if (!message) {
   console.log("❌ Please Add some log");
