@@ -15,4 +15,4 @@ const filePath = path.join(__dirname, "log.txt");
 fs.appendFile(filePath, message, "utf-8", () => {
   console.log("")
 });
-console.log(filePath);
+// console.log(filePath);
