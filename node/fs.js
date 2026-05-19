@@ -7,8 +7,8 @@ const fs = require('fs')
 // console.log("data read successfully",data)
 // })
 
-const readSteam=fs.createReadStream("./text.txt", "utf8")
-const writeSteam=fs.createWriteStream("./output.txt", "utf8")
+const readSteam = fs.createReadStream("./text.txt", "utf8")
+const writeSteam = fs.createWriteStream("./output.txt", "utf8")
 readSteam.on("data",(data)=>{
     console.log(data)
     writeSteam.write(data,(err)=>{
