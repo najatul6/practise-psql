@@ -13,7 +13,7 @@ readSteam.on("data",(data)=>{
     console.log(data)
     writeSteam.write(data,(err)=>{
         if(err){
-            console.log("Something went wrong",err)
+            console.log("Something went wrong",err, erro.message)
         }
         
     })
