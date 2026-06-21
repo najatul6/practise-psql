@@ -13,6 +13,6 @@ if (!message) {
 
 const filePath = path.join(__dirname, "log.txt");
 fs.appendFile(filePath, message, "utf-8", () => {
-  console.log("Update success full")
+  console.log("Update successful")
 });
 // console.log(filePath);
